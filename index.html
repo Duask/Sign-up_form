@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/avara" type="text/css"/>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="front-img">
+        
+        <div id="hero">
+            <div class="back"></div>
+            <h1>AVARA</h1>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+                <path d="M858-389q8-35-3-67t-24-63q-26 24-47 48.5T755-410q-7 35 3.5 66t23.5 62q26-23 47-47.5t29-59.5ZM193-612q27 27 63 31.5t68-12.5l-37-36q-28-27-62-30.5T162-643l31 31Zm87-222L149-704q44-21 93-13t87 46l37 37q18-32 13.5-69T348-767l-68-67ZM838-79 366-550q-50 35-110.5 30.5T150-569L40-680l240-239 110 110q45 45 49 106t-31 111l303 302q-13-32-17.5-65t2.5-67q6-30 20.5-56t34-48.5q19.5-22.5 44.5-41t52-32.5q39 48 60 105t9 117q-11 54-45.5 95T788-213l92 92-42 42ZM282-678Zm341 215-43-43 240-239v-75h-75L504-581l-41-42 257-257h160v160L623-463ZM149-84l-65-65q-9-9-9-21t9-21l124-124-88-88 43-43q17-17 41.5-17t42.5 17l20 19 69-69 41 42-69 69 75 75 69-69 44 43-69 69 19 20q17 18 17 42.5T446-163l-43 43-88-88L191-84q-9 9-21 9t-21-9Z"/>
+            </svg>
+        </div>
+        <footer>Photo by <span>Casey Horner</span> on <span>Unsplash</span></footer>
+    </div>
+    <div class="content">
+        <p class="instruction">
+            <strong>
+                Enter to the world of Avara. <br>
+                You know there is no alternative left, leave all behind and never look back. 
+                <br>
+                Sign up to get started.
+                <br>
+                You know what you <em>have</em> to do.
+            </strong>
+        </p>
+        <form action="" method="post">
+            <div class="form-content">
+                <legend>Let's do this!</legend>
+                
+                <div id="all-fields">
+                    <div class="form-field">
+                        <label for="first">First name</label>
+                        <input type="text" name="first-name" id="first" pattern="[a-zA-z]+" placeholder="E.g. John" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="last">Last name</label>
+                        <input type="text" name="last-name" id="last" pattern="[a-zA-z]+" placeholder="E.g. Doe" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" name="x-email" id="email" placeholder="johnfree@gmail.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" name="x-phone" id="phone" pattern="\d{3}[\-]*\d{3}[\-]*\d{4}" placeholder="033-765-4321" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" name="x-password" id="password" placeholder="Use upper/lower case and numbers" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="password-c">Confirm password</label>
+                        <input type="password" name="x-password-c" id="password-c" placeholder="Repeat your password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                    </div>
+                </div>
+            </div>
+            <button class="submit-btn" type="submit">Create account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </form>
+    </div>
+
+</body>
+</html>
